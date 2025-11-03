@@ -6,3 +6,4 @@
 *.swp
 .DS_Store
 !setup_bsg_env.sh
+!run_bi212_bi214.sh
