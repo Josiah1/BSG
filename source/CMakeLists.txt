@@ -19,6 +19,8 @@ find_package(Threads)
 
 message(STATUS "BOOST: I: ${Boost_INCLUDE_DIRS} L: ${Boost_LIBRARIES}")
 
+find_package(fmt REQUIRED)
+include_directories(${fmt_INCLUDE_DIRS})
 find_package(spdlog REQUIRED)
 include_directories(${spdlog_INCLUDE_DIRS})
 

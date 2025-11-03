@@ -4,8 +4,8 @@ set(nme_headers include/MatrixElements.h include/NilssonOrbits.h include/NMEOpti
 add_library(nme_static STATIC ${nme_sources})
 add_library(nme SHARED ${nme_sources})
 
-target_link_libraries(nme ${GSL_LIBRARIES} ${ROOT_LIBRARIES} ${Boost_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
-target_link_libraries(nme_static ${GSL_LIBRARIES} ${ROOT_LIBRARIES} ${Boost_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(nme ${GSL_LIBRARIES} ${ROOT_LIBRARIES} ${Boost_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT} ${fmt_LIBRARIES})
+target_link_libraries(nme_static ${GSL_LIBRARIES} ${ROOT_LIBRARIES} ${Boost_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT} ${fmt_LIBRARIES})
 
 add_custom_command(TARGET nme
                    POST_BUILD

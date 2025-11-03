@@ -10,9 +10,11 @@ if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     message(FATAL_ERROR "in-source build detected")
 endif()
 
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.5)
 
 project(BSG)
+
+set(CMAKE_CXX_STANDARD 17)
 
 # - Prepend our own CMake Modules to the search path
 # NB: if our custom modules include others that we don't supply, those in
