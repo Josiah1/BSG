@@ -4,3 +4,5 @@
 /build*
 *.pyc
 *.swp
+.DS_Store
+!setup_bsg_env.sh
